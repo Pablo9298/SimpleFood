@@ -4,5 +4,122 @@
 @import 'global';
 
 
+.header {
+  padding: 60px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-list {
+    display: flex;
+    margin-right: 64px;
+  }
+
+  &__menu-item:not(:last-child) {
+    margin-right: 43px;
+  }
+
+  &__menu-link {
+    font-size: 18px;
+    line-height: 1.16;
+    outline: transparent;
+    transition: box-shadow 0.3s, color 0.3s, text-shadow 0.3s, opacity 0.3s;
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+      border-radius: 5px;
+    }
+
+    &:hover {
+      color: $orange;
+    }
+
+    &:active {
+      color: $dark;
+      text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+      box-shadow: none;
+    }
+  }
+
+  &__menu-link--active {
+    color: $orange;
+  }
+  
+  &__user-nav__link {
+    height: 44px;
+    width: 44px;
+    padding: 10px;
+    position: relative;
+    outline: transparent;
+    transition: all 0.3s;
+    
+    &:focus {
+      background-color: rgba(255, 122, 80, 0.1);
+      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+      border-radius: 5px;
+    }
+
+    &:hover {
+      background-color: #FF7A50;
+      border-radius: 5px;
+
+      .header__svg {
+        filter: invert(100%) sepia(10%) saturate(7500%) hue-rotate(216deg) brightness(120%) contrast(108%);
+      }
+
+      .header__user-num {
+        background-color: #fff;
+        color: #FF7A50;
+      }
+    }
+
+    &:active {
+      background-color: #FFF2ED;
+      border-radius: 5px;
+      border: transparent;
+      box-shadow: none;
+
+      .header__svg {
+        filter: invert(0%) sepia(3%) saturate(0%) hue-rotate(300deg) brightness(100%) contrast(98%);
+      }
+
+      .header__user-num {
+        background-color: #FF7A50;
+        color: #fff;
+      }
+    }
+  }
+
+  &__user-nav__link:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__svg {
+    height: 23px;
+    width: 24px;
+  }
+
+  &__user-num {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #fff;
+    background-color: $orange;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
 
 @import 'media';
