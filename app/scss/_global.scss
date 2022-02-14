@@ -20,10 +20,9 @@ body {
 }
 
 .logo {
-  flex: 0 0 197px;
+  flex: 0 0 200px;
   outline: transparent;
   transition: opacity 0.3s;
-  padding: 5px 5px 0; 
 
   &:focus {
     border: 1px solid $orange;

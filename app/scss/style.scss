@@ -51,7 +51,7 @@
   &__menu-link--active {
     color: $orange;
   }
-  
+
   &__user-nav__link {
     height: 44px;
     width: 44px;
@@ -59,7 +59,7 @@
     position: relative;
     outline: transparent;
     transition: all 0.3s;
-    
+
     &:focus {
       background-color: rgba(255, 122, 80, 0.1);
       box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
@@ -118,6 +118,209 @@
     height: 14px;
     border-radius: 50%;
     text-align: center;
+  }
+}
+
+.footer-top {
+  padding-bottom: 71px;
+  display: flex;
+
+  &__items {
+    margin-right: 70px;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    max-width: 200px;
+    width: 100%;
+  }
+  
+  &__input {
+    width: 200px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 6px 15px;
+    transition: all 0.3s;
+    outline: transparent;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.3;
+      color: #c2c2c2;
+      opacity: 0.9;
+      transition: all 0.3s;
+    }
+  }
+
+  &__input:focus {
+    box-shadow: 0 0 0 2px #FF6838;
+  }
+
+  &__input:hover {
+    &::placeholder {
+      color: $darkblue;
+      opacity: 0.9;
+    }
+  }
+
+  &__input:active {
+    outline: transparent;
+    border: transparent;
+    color: transparent;
+  }
+
+  &__form-btn {
+    background-color: $orange;
+    color: #fff;
+    @extend %rubik-500;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    padding: 12px 38px 12px 70px;
+    transition: all 0.3s;
+    outline: transparent;
+  }
+
+  &__form-btn {
+    svg {
+      position: absolute;
+      left: 3em;
+      top: auto;
+      bottom: auto;
+    }
+  }
+
+  &__form-btn:focus {
+    color: $orange;
+    background-color: rgba(255, 122, 80, 0.1);
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+
+    svg {
+      filter: invert(51%) sepia(85%) saturate(1569%) hue-rotate(333deg) brightness(97%) contrast(109%); 
+    }
+  }
+
+  &__form-btn:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    color: $orange;
+
+    svg {
+      filter: invert(51%) sepia(85%) saturate(1569%) hue-rotate(333deg) brightness(97%) contrast(109%);
+    }
+  }
+
+  &__form-btn:active {
+    box-shadow: none;
+    background-color: #FFF2ED;
+  }
+
+  &__list-item {
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+
+  &__list-info {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 31px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: flex;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      bottom: 5px;
+    }
+  }
+
+  &__list-info--address:before {
+    background-image: url('../images/icons/icon-location.svg');
+  }
+
+  &__list-info--tel:before {
+    background-image: url('../images/icons/icon-calling.svg');
+  }
+
+  &__list-info--mail:before {
+    background-image: url('../images/icons/icon-message.svg');
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-list {
+    margin-right: 13px;
+
+  }
+
+  &__info-link {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  &__social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: #ECECEC;
+    border-radius: 50%;
+    position: relative;
+    transition: color 0.3s,
+    filter 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
+
+    &:focus {
+      background-color: #FFF2ED;
+      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+      outline: transparent;
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      svg {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+      }
+    }
+
+    &:active {
+      background-color: #FFF2ED;
+      box-shadow: none;
+
+      svg {
+        filter: invert(53%) sepia(92%) saturate(790%) hue-rotate(326deg) brightness(101%) contrast(101%);
+      }
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+}
+
+.hero {
+  padding-bottom: 120px;
+
+  &__img {
+    width: 560px;
+    height: 660px;
   }
 }
 
