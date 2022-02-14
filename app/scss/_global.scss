@@ -38,3 +38,26 @@ body {
     border: transparent;
   }
 }
+
+.link {
+  font-size: 18px;
+  line-height: 1.16;
+  outline: transparent;
+  transition: box-shadow 0.3s, color 0.3s, text-shadow 0.3s, opacity 0.3s;
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    border-radius: 5px;
+  }
+
+  &:hover {
+    color: $orange;
+    text-decoration-line: none;
+  }
+
+  &:active {
+    color: $dark;
+    text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+    box-shadow: none;
+  }
+}
