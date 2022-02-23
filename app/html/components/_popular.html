@@ -5,183 +5,263 @@
     </h2>
 
     <ul class="popular__items">
-      <li class="popular__item">
+      <li class="popular__list">
         <button class="popular__btn popular__btn--active" data-filter="all" type="button">
-          <svg height="44" width="44">
-            <use xlink:href="images/sprite.svg#icon-burger"></use>
-          </svg>
+          <span style="background-image: url('images/icons/icon-burger.svg');"></span>
           Бургеры
         </button>
       </li>
 
-      <li class="popular__item">
+      <li class="popular__list">
         <button class="popular__btn" data-filter=".category-b" type="button">
-          <svg height="44" width="44">
-            <use xlink:href="images/sprite.svg#icon-pizza"></use>
-          </svg>
+          <span style="background-image: url('images/icons/icon-pizza.svg');"></span>
           Пицца
         </button>
       </li>
 
-      <li class="popular__item">
+      <li class="popular__list">
         <button class="popular__btn" data-filter=".category-c" type="button">
-          <svg height="44" width="44">
-            <use xlink:href="images/sprite.svg#icon-sandwich"></use>
-          </svg>
+          <span style="background-image: url('images/icons/icon-sandwich.svg');"></span>
           Сендвичи
         </button>
       </li>
 
-      <li class="popular__item">
+      <li class="popular__list">
         <button class="popular__btn" data-filter=".category-d" type="button">
-          <svg height="44" width="44">
-            <use xlink:href="images/sprite.svg#icon-asia"></use>
-          </svg>
+          <span style="background-image: url('images/icons/icon-asia.svg');"></span>
           Азиатская кухня
         </button>
       </li>
 
-      <li class="popular__item">
+      <li class="popular__list">
         <button class="popular__btn" data-filter=".category-f" type="button">
-          <svg height="44" width="44">
-            <use xlink:href="images/sprite.svg#icon-dish"></use>
-          </svg>
+          <span style="background-image: url('images/icons/icon-dish.svg');"></span>
           Cеты
         </button>
       </li>
     </ul>
 
-    <div class="popular__cards">
-      <div class="popular__card mix category-b">
-        <img class="popular__img" src="images/popular/1.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Чизбургер с листьями салата
-        </p>
-        <span class="popular__num">
-          160 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+    <ul class="popular__cards">
+      <li class="popular__item mix category-b">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/1.jpg" alt="Чизбургер">
+          </a>
 
-      <div class="popular__card mix category-b">
-        <img class="popular__img" src="images/popular/2.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Бифбургер
-        </p>
-        <span class="popular__num">
-          190 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Чизбургер с листьями салата
+            </a>
+          </h3>
 
-      <div class="popular__card mix category-b">
-        <img class="popular__img" src="images/popular/3.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Королевский чизбургер
-        </p>
-        <span class="popular__num">
-          260 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+          <span class="product-card__price">
+            160 <span>руб.</span>
+          </span>
 
-      <div class="popular__card mix category-b">
-        <img class="popular__img" src="images/popular/4.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Черный гамбургер
-        </p>
-        <span class="popular__num">
-          199 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
 
-      <div class="popular__card mix category-c">
-        <img class="popular__img" src="images/popular/5.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Чикен бургер
-        </p>
-        <span class="popular__num">
-          180 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+      <li class="popular__item mix category-c">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/2.jpg" alt="Чизбургер">
+          </a>
 
-      <div class="popular__card mix category-c">
-        <img class="popular__img" src="images/popular/6.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Чизбургер с листьями салата
-        </p>
-        <span class="popular__num">
-          160 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Бифбургер
+            </a>
+          </h3>
 
-      <div class="popular__card mix category-d">
-        <img class="popular__img" src="images/popular/7.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Бифбургер
-        </p>
-        <span class="popular__num">
-          190 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+          <span class="product-card__price">
+            190 <span>руб.</span>
+          </span>
 
-      <div class="popular__card mix category-d">
-        <img class="popular__img" src="images/popular/8.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Королевский чизбургер
-        </p>
-        <span class="popular__num">
-          260 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
 
-      <div class="popular__card mix category-f">
-        <img class="popular__img" src="images/popular/9.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Черный гамбургер
-        </p>
-        <span class="popular__num">
-          199 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
+      <li class="popular__item mix category-d">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/3.jpg" alt="Чизбургер">
+          </a>
 
-      <div class="popular__card mix category-f">
-        <img class="popular__img" src="images/popular/10.jpg" alt="Чизбургер">
-        <p class="popular__text">
-          Чикен бургер
-        </p>
-        <span class="popular__num">
-          180 руб.
-        </span>
-        <button class="popular__card-btn" type="button">
-          В корзину
-        </button>
-      </div>
-    </div>
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Королевский чизбургер
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            260 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+
+      <li class="popular__item mix category-d">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/4.jpg" alt="Чизбургер">
+          </a>
+
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Черный гамбургер
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            199 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+
+      <li class="popular__item mix category-f">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/5.jpg" alt="Чизбургер">
+          </a>
+
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Чикен бургер
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            180 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+
+      <li class="popular__item mix category-f">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/6.jpg" alt="Чизбургер">
+          </a>
+
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Чизбургер с листьями салата
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            160 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+
+      <li class="popular__item mix category-b">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/7.jpg" alt="Чизбургер">
+          </a>
+
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Бифбургер
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            190 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+
+      <li class="popular__item mix category-b">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/8.jpg" alt="Чизбургер">
+          </a>
+
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Королевский чизбургер
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            260 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+
+      <li class="popular__item mix category-b">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/9.jpg" alt="Чизбургер">
+          </a>
+
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Черный гамбургер
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            199 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+
+      <li class="popular__item mix category-b">
+        <article class="popular__card product-card">
+          <a class="product-card__image-link" href="#">
+            <img class="product-card__img" src="images/popular/10.jpg" alt="Чизбургер">
+          </a>
+
+          <h3 class="product-card__name">
+            <a class="product-card__link" href="#">
+              Чикен бургер
+            </a>
+          </h3>
+
+          <span class="product-card__price">
+            180 <span>руб.</span>
+          </span>
+
+          <button class="product-card__cart btn" type="button">
+            В корзину
+          </button>
+        </article>
+      </li>
+    </ul>
 
     <a class="popular__link link" href="#">Показать еще</a>
   </div>

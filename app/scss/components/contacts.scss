@@ -1,0 +1,90 @@
+.contacts {
+
+  &__list {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 31px;
+    margin-bottom: 15px;
+  }
+
+  &__item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 24px;
+  }
+
+  &__item--address::before {
+    background-image: url('../images/icons/icon-location.svg');
+  }
+
+  &__item--tel::before {
+    background-image: url('../images/icons/icon-calling.svg');
+  }
+
+  &__item--mail::before {
+    background-image: url('../images/icons/icon-message.svg');
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.social {
+  display: flex;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  }
+
+  &__link {
+    display: block;
+    background-color: $siler-200;
+    border-radius: 50%;
+    outline: transparent;
+    transition: background-color 0.3s,
+      box-shadow 0.3s;
+
+    &:focus {
+      background-color: #FFF2ED;
+      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    }
+
+    &:hover {
+      background-color: $orange;
+    }
+
+    .social__icon:hover {
+      filter: invert(97%) sepia(100%) saturate(10%) hue-rotate(191deg) brightness(101%) contrast(101%);
+    }
+
+    &:active {
+      background-color: #FFF2ED;
+      box-shadow: none;
+    }
+
+    .social__icon:active {
+      filter: invert(58%) sepia(21%) saturate(1670%) hue-rotate(324deg) brightness(101%) contrast(101%);
+    }
+  }
+
+  &__icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 39px;
+    width: 39px;
+  }
+}
