@@ -8,7 +8,7 @@ body {
   line-height: 1.5;
   color: $dark;
   background-color: $silver-100;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,25 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.burger {
+  @include burger;
+}
+
+body.lock {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .title {
@@ -61,6 +80,7 @@ body {
   &:active {
     opacity: 0.5;
     border: transparent;
+    box-shadow: none;
   }
 }
 
