@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Магазин SimpleFood | Главная страница</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,6 +19,11 @@
       <a class="header__logo logo" href="#">
         <img class="logo__img" width="200" src="images/logo.svg" alt="Логотип Магазина">
       </a>
+
+      <button class="header__burger burger" type="button">
+        <span class="burger__line"></span>
+        <span class="sr-only">Мобильное меню</span>
+      </button>
 
       <ul class="header__list">
         <li class="header__item">
@@ -48,7 +55,7 @@
 
         <li class="user-nav__list">
           <a class="user-nav__link user-nav__link--cart" href="#">
-            <span class="sr-only">корзина</span>
+            <span class="sr-only">корзина товаров</span>
             <span class="user-nav__num">4</span>
           </a>
         </li>
@@ -85,7 +92,7 @@
           </ul>
         </div>
 
-        <img class="hero__img" src="images/scooter-guy.png" alt="Человек на скутере">
+        <img class="hero__img" src="images/scooter-guy.png" width="560" height="660" alt="Человек на скутере">
     </div>
   </section>
 
@@ -136,7 +143,7 @@
     <ul class="popular__cards">
       <li class="popular__item mix category-b">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/1.jpg">
             <img class="product-card__img" src="images/popular/1.jpg" alt="Чизбургер">
           </a>
 
@@ -158,7 +165,7 @@
 
       <li class="popular__item mix category-c">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/2.jpg">
             <img class="product-card__img" src="images/popular/2.jpg" alt="Чизбургер">
           </a>
 
@@ -180,7 +187,7 @@
 
       <li class="popular__item mix category-d">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/3.jpg">
             <img class="product-card__img" src="images/popular/3.jpg" alt="Чизбургер">
           </a>
 
@@ -202,7 +209,7 @@
 
       <li class="popular__item mix category-d">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/4.jpg">
             <img class="product-card__img" src="images/popular/4.jpg" alt="Чизбургер">
           </a>
 
@@ -224,7 +231,7 @@
 
       <li class="popular__item mix category-f">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/5.jpg">
             <img class="product-card__img" src="images/popular/5.jpg" alt="Чизбургер">
           </a>
 
@@ -246,7 +253,7 @@
 
       <li class="popular__item mix category-f">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/6.jpg">
             <img class="product-card__img" src="images/popular/6.jpg" alt="Чизбургер">
           </a>
 
@@ -268,7 +275,7 @@
 
       <li class="popular__item mix category-b">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/7.jpg">
             <img class="product-card__img" src="images/popular/7.jpg" alt="Чизбургер">
           </a>
 
@@ -290,7 +297,7 @@
 
       <li class="popular__item mix category-b">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/8.jpg">
             <img class="product-card__img" src="images/popular/8.jpg" alt="Чизбургер">
           </a>
 
@@ -312,7 +319,7 @@
 
       <li class="popular__item mix category-b">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/9.jpg">
             <img class="product-card__img" src="images/popular/9.jpg" alt="Чизбургер">
           </a>
 
@@ -334,7 +341,7 @@
 
       <li class="popular__item mix category-b">
         <article class="popular__card product-card">
-          <a class="product-card__image-link" href="#">
+          <a class="product-card__image-link" data-fancybox="gallery" data-width="500" href="images/popular/10.jpg">
             <img class="product-card__img" src="images/popular/10.jpg" alt="Чизбургер">
           </a>
 
@@ -361,7 +368,7 @@
 
   <section class="features">
   <div class="features__container container">
-    <img src="images/features.png" alt="доставщик еды" class="features__img">
+    <img src="images/features.png" width="440" height="585" alt="доставщик еды" class="features__img">
 
     <div class="features__content">
       <h2 class="features__title title">
@@ -591,16 +598,16 @@
 
       <ul class="app-section__list">
         <li class="app-section__item">
-          <a class="app-section__link" style="background-image: url('images/icons/icon-appstore.svg');" href="#"></a>
+          <a class="app-section__link" style="background-image: url('images/icons/icon-appstore.svg');" href="#" target="_blank"></a>
         </li>
 
         <li class="app-section__item">
-          <a class="app-section__link" style="background-image: url('images/icons/icon-googleplay.svg');" href="#"></a>
+          <a class="app-section__link" style="background-image: url('images/icons/icon-googleplay.svg');" href="#" target="_blank"></a>
         </li>
       </ul>
     </div>
 
-    <img class="app-section__img" src="images/app-bg.jpg" alt="Телефон и еда">
+    <img class="app-section__img" width="570" height="380" src="images/app-bg.jpg" alt="Телефон и еда">
   </div>
 </section>
 

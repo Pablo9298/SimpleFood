@@ -1,0 +1,40 @@
+.breadcrumbs {
+  background-color: rgba(255, 122, 80, 0.1);
+  padding: 24px 0;
+  margin-bottom: 60px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 17px;
+    position: relative;
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/icon-next.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 6px;
+      height: 10px;
+      top: 12px;
+      right: -11px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #505050;
+  }
+}

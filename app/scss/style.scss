@@ -1,20 +1,26 @@
+//подключение базовых стилей
 @import 'common/vars';
 @import 'common/fonts';
 @import 'common/reset';
 @import 'common/libs';
 @import 'common/global';
 
+//подключение компонентов
 @import 'components/product-card.scss';
 @import 'components/contacts.scss';
+@import 'components/catalog.scss';
+@import 'components/breadcrumbs.scss';
 
+//header
+@import 'header';
 
-@import 'components/header';
+//main
+@import 'hero';
+@import 'popular';
+@import 'features';
+@import 'restorant';
+@import 'reviews';
+@import 'app-section';
 
-@import 'components/hero';
-@import 'components/popular';
-@import 'components/features';
-@import 'components/restorant';
-@import 'components/reviews';
-@import 'components/app-section';
-
-@import 'components/footer';
+//footer
+@import 'footer';

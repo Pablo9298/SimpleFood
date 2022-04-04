@@ -2,6 +2,7 @@
 
   &__img {
     margin: 0 auto 10px;
+    height: 140px;
   }
 
   &__name {
@@ -11,6 +12,7 @@
     font-size: 15px;
     line-height: 1.2;
     margin-bottom: 10px;
+    @include line-clamp(2);
   }
 
   &__price {

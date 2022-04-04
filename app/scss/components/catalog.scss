@@ -1,0 +1,20 @@
+.catalog {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__filter-name {
+    margin-right: 10px;
+  }
+
+  // &__filter-name,
+  // &__filter-number {
+  //   background-color: #FFFFFF;
+  //   border: 1px solid #C2C2C2;
+  //   border-radius: 3px;
+  //   padding: 15px;
+  // }
+}
