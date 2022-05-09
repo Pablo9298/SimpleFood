@@ -1,0 +1,45 @@
+.burger-info__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E4E4E4;
+  max-width: 100%;
+}
+
+.burger-info__slide {
+  width: 610px;
+  height: 550px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 0px 1px #ECECEC;
+          box-shadow: 0px 0px 0px 1px #ECECEC;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger-info__img {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+}
+
+.burger-info__content {
+  margin-left: 30px;
+}
+
+.burger-info__title {
+  margin-bottom: 30px;
+}
+
+.burger-info__price {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.4;
+  color: #363853;
+}
+/*# sourceMappingURL=burger-info.css.map */
