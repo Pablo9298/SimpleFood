@@ -10,6 +10,7 @@
   &__content {
     max-width: 540px;
     width: 100%;
+    margin-right: 10px;
   }
 
   &__title {
@@ -37,5 +38,40 @@
     width: 135px;
     height: 40px;
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-section {
+    padding-bottom: 80px;
+
+    &__img {
+      width: 400px;
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app-section {
+    padding-bottom: 40px;
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .app-section {
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
   }
 }

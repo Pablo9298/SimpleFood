@@ -8,7 +8,7 @@
   }
 
   &__item {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     max-width: 370px;
@@ -90,5 +90,39 @@
     width: 14px;
     height: 12px;
     transition: transform 0.3s;
+  }
+}
+
+@media (max-width: 1200px) {
+  .restorant {
+
+    &__cards {
+      grid-gap: 20px 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .restorant {
+    padding-bottom: 80px;
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      justify-self: center;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .restorant {
+    padding-bottom: 40px;
+
+    &__cards {
+      grid-template-columns: none;
+      text-align: center;
+    }
   }
 }

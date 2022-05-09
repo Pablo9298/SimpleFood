@@ -1,0 +1,41 @@
+.breadcrumbs {
+  background-color: rgba(255, 122, 80, 0.1);
+  padding: 24px 0;
+  margin-bottom: 60px;
+}
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  margin-right: 17px;
+  position: relative;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__item::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icons/icon-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 6px;
+  height: 10px;
+  top: 12px;
+  right: -11px;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #505050;
+}
+/*# sourceMappingURL=breadcrumbs.css.map */

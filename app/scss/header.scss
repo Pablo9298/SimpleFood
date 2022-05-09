@@ -128,15 +128,13 @@
   }
 }
 
-@media (max-width: 992px) {}
-
 @media (max-width: 768px) {
   .header {
     padding: 30px 0;
 
     &__logo {
       position: relative;
-      z-index: 2;
+      z-index: 12;
     }
 
     &__burger {
@@ -152,7 +150,7 @@
       width: 80%;
       height: 100%;
       background-color: #fff;
-      z-index: 1;
+      z-index: 2;
       display: block;
       text-align: start;
       padding-top: 80px;
@@ -162,6 +160,12 @@
     &__list--active {
       top: 0;
       overflow: auto;
+      z-index: 11;
+    }
+
+    &__list--active + .logo__img {
+        width: 259px;
+        height: 39px;
     }
 
     &__item {
@@ -186,4 +190,32 @@
   }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .header {
+
+    &__nav {
+      position: relative;
+    }
+
+    &__logo {
+      position: absolute;
+    }
+
+    .logo__img--active {
+      width: 200px;
+      height: 39px;
+    }
+  }
+
+  .logo {
+
+    &__img {
+      width: 115px;
+      height: 23px;
+    }
+  }
+
+  .user-nav {
+    margin: 0 60px 0 auto;
+  }
+}

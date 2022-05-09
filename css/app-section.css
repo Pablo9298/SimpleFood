@@ -1,0 +1,77 @@
+.app-section {
+  padding-bottom: 120px;
+}
+
+.app-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-section__content {
+  max-width: 540px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.app-section__title {
+  margin-bottom: 45px;
+}
+
+.app-section__text {
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.app-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app-section__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.app-section__link {
+  display: block;
+  width: 135px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .app-section {
+    padding-bottom: 80px;
+  }
+  .app-section__img {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-section {
+    padding-bottom: 40px;
+  }
+  .app-section__img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-section__title {
+    margin-bottom: 15px;
+  }
+  .app-section__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=app-section.css.map */
